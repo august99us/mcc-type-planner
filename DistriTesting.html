@@ -1,0 +1,102 @@
+<html>
+<body>
+
+<script src="http://www.googledrive.com/host/0B-C-qvrpw3aLcEJzcGxWVGlwUlk"></script>
+
+<style>
+button.modifying {
+	width: 23px;
+	padding: 1px;
+	text-align: center;
+}
+body {
+	background-color: fffbfb;
+}
+</style>
+
+<h1> Javascript stat point distri testing</h1>
+
+<button onClick="loader()">Start!</button><br><br>
+<table width="860" border="0" style="background-color: fffbfb;">
+  <tr>
+    <td><strong>Total      </strong></td>
+    <td><input id="total" type="number" onChange="totalUpdate()" value="5000"><button class="modifying" id="--.total" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.total" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.total" onClick="plus(this.id)">+</button><button class="modifying" id="++.total" onClick="plusplus(this.id)">++</button></td>
+    <td style="position: relative; border:solid 1px; border-radius: 5px;" width="439"><div style="position: absolute; top: 0; left: 0; background-color: ffffff; width: 100%; height: 1.3em; border-radius: 5px;"></div><div style="position: absolute; top: 0; left: 0; background-color: ff99cc; width: 100%; height: 1.3em; border-bottom-left-radius: 5px; border-top-left-radius: 5px; border-bottom-right-radius: 5px; border-top-right-radius: 5px;" id="leftBar"></div><div align="center" style="position: absolute; top: 0.07em;left: 0; width: 100%; height: 100%; vertical-align: middle;"><strong>Personality Points Left: <span id="left">5000</span></strong></div></td>
+  </tr>
+  <tr>
+    <td width="133">Kindness</td>
+    <td><input id="kindness" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.kindness" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.kindness" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.kindness" onClick="plus(this.id)">+</button><button class="modifying" id="++.kindness" onClick="plusplus(this.id)">++</button></td>
+    <td rowspan="10" align="center" style="border:solid 1px; border-radius: 5px;"><table width="369" height="239" border="0">
+      <tr>
+        <td width="123"><img src="http://vignette1.wikia.nocookie.net/myroid/images/c/c7/Default0.png" width="123" height="29" id="default"></td>
+        <td width="123"><img width="123" height="29" id="sweet" src="http://vignette2.wikia.nocookie.net/myroid/images/a/ab/Sweet0.png"></td>
+        <td width="109"><img width="123" height="29" id="childish" src="http://vignette1.wikia.nocookie.net/myroid/images/5/5e/Childish0.png"></td>
+      </tr>
+      <tr>
+        <td><img width="123" height="29" id="tsundere" src="http://vignette4.wikia.nocookie.net/myroid/images/6/6f/Tsundere0.png"></td>
+        <td><img width="123" height="29" id="dominant" src="http://vignette3.wikia.nocookie.net/myroid/images/b/ba/Dominant0.png"></td>
+        <td><img width="123" height="29" id="tomboy" src="http://vignette1.wikia.nocookie.net/myroid/images/3/3c/Tomboy0.png"></td>
+      </tr>
+      <tr>
+        <td><img width="123" height="29" id="mysterious" src="http://vignette3.wikia.nocookie.net/myroid/images/4/4d/Mysterious0.png"></td>
+        <td><img width="123" height="29" id="sexy" src="http://vignette1.wikia.nocookie.net/myroid/images/9/94/Sexy0.png"></td>
+        <td><img width="123" height="29" id="neat" src="http://vignette1.wikia.nocookie.net/myroid/images/1/1f/Neat0.png"></td>
+      </tr>
+      <tr>
+        <td><img width="123" height="29" id="sassy" src="http://vignette3.wikia.nocookie.net/myroid/images/e/ed/Sassy0.png"></td>
+        <td><img width="123" height="29" id="cool" src="http://vignette3.wikia.nocookie.net/myroid/images/9/9c/Cool0.png"></td>
+        <td><img width="123" height="29" id="needy" src="http://vignette2.wikia.nocookie.net/myroid/images/5/5f/Needy0.png"></td>
+      </tr>
+      <tr>
+        <td colspan="3" align="center"><img width="123" height="29" id="yandere" src="http://vignette2.wikia.nocookie.net/myroid/images/a/aa/Yandere0.png">&nbsp;<img width="123" height="29" id="crybaby" src="http://vignette1.wikia.nocookie.net/myroid/images/4/4a/Crybaby0.png"></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>Naughtiness</td>
+    <td><input id="naughtiness" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.naughtiness" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.naughtiness" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.naughtiness" onClick="plus(this.id)">+</button><button class="modifying" id="++.naughtiness" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Modesty</td>
+    <td><input id="modesty" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.modesty" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.modesty" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.modesty" onClick="plus(this.id)">+</button><button class="modifying" id="++.modesty" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Flamboyance</td>
+    <td><input id="flamboyance" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.flamboyance" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.flamboyance" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.flamboyance" onClick="plus(this.id)">+</button><button class="modifying" id="++.flamboyance" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Stubborness</td>
+    <td><input id="stubborness" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.stubborness" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.stubborness" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.stubborness" onClick="plus(this.id)">+</button><button class="modifying" id="++.stubborness" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Bashfulness</td>
+    <td><input id="bashfulness" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.bashfulness" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.bashfulness" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.bashfulness" onClick="plus(this.id)">+</button><button class="modifying" id="++.bashfulness" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Cheerfulness</td>
+    <td><input id="cheerfulness" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.cheerfulness" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.cheerfulness" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.cheerfulness" onClick="plus(this.id)">+</button><button class="modifying" id="++.cheerfulness" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Shyness</td>
+    <td><input id="shyness" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.shyness" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.shyness" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.shyness" onClick="plus(this.id)">+</button><button class="modifying" id="++.shyness" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Curiosity</td>
+    <td><input id="curiosity" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.curiosity" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.curiosity" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.curiosity" onClick="plus(this.id)">+</button><button class="modifying" id="++.curiosity" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+    <td>Obedience</td>
+    <td><input id="obedience" type="number" onChange="pointsUpdate(this.id)" value="0"><button class="modifying" id="--.obedience" onClick="minusminus(this.id)">&#8722;&#8722;</button><button class="modifying" id="-.obedience" onClick="minus(this.id)">&#8722;</button><button class="modifying" id="+.obedience" onClick="plus(this.id)">+</button><button class="modifying" id="++.obedience" onClick="plusplus(this.id)">++</button></td>
+  </tr>
+  <tr>
+  	<td colspan="3"><br><button onClick="resetStats()">Reset</button>&nbsp;<button onClick="special(this.id)" id="mostTypes5000">Most Types - 5000 Points (Add One More)</button>&nbsp;<button onClick="special(this.id)" id="all5hour">All 5-hour Works</button>&nbsp;<button onClick="special(this.id)" id="allTypes">All Types - 7500 Points</button><br><br>
+    <button onClick="savePers()">Save</button>
+    <button onClick="loadPers()">Load</button>
+    <input style="width:600px;" id="saveload"></input>
+    </td>
+  </tr>
+</table>
+<h2 id="end"><br>
+</img></img></img></img></img></img></img></img></img></img></img></img></img></img></h2>
+</body>
+</html>
